@@ -1,0 +1,97 @@
+print(f"a -- bryła b - fig płaskie")
+inp = input(":").lower().strip()
+
+if inp == "a":
+    print(f"a - PP Bryły b - V Bryły")
+    inp = input(":").lower().strip()
+
+    if inp == "a":
+        print(f"a - pp sześcianu b - pp prostopadłościanu")
+        inp = input(":").lower().strip()
+
+        if inp == "a":
+            a = float(input("a: "))
+            print(f"Sześcian o boku {a} ma pp = {a*a*6}")
+
+        elif inp == "b":
+            a = float(input("a: "))
+            b = float(input("b: "))
+            c = float(input("c: "))
+            print(f"Prostopadłościan o bokach {a}, {b} i {c} ma pp = {2*a*b + 2*a*c + 2*b*c}")
+
+    elif inp == "b":
+        print(f"a - V sześcianu b - V prostopadłościanu")
+        inp = input(":").lower().strip()
+
+        if inp == "a":
+            a = float(input("a: "))
+            print(f"Objętość sześcianu o boku {a} = {a*a*a}")
+
+        elif inp == "b":
+            a = float(input("a: "))
+            b = float(input("b: "))
+            c = float(input("c: "))
+            print(f"Objętość prostopadłościanu o bokach {a}, {b} i {c} = {a*b*c}")
+
+elif inp == "b":
+    print(f"a - obwody b - pola")
+    inp = input(":").lower().strip()
+
+    if inp == "a":
+        print("a - obwód kwadratu b - obwód rombu")
+        inp = input(":").lower().strip()
+
+        if inp == "a":
+            a = float(input("a: "))
+            print(f"Obwód kwadratu o boku {a} = {a*4}")
+
+        elif inp == "b":
+            a = float(input("a: "))
+            print(f"Obwód rombu o boku {a} = {a*4}")
+
+        print("a - obwód prostokąta b - obwód równoległoboku")
+        inp = input(":").lower().strip()
+
+        if inp == "a":
+            a = float(input("a: "))
+            b = float(input("b: "))
+            print(f"Obwód prostokąta o bokach {a} i {b} = {a*2 + b*2}")
+
+        elif inp == "b":
+            a = float(input("a: "))
+            b = float(input("b: "))
+            print(f"Obwód równoległoboku o bokach {a} i {b} = {a*2 + b*2}")
+
+        print("a - obwód trapezu b - obwód trójkąta")
+        inp = input(":").lower().strip()
+
+        if inp == "a":
+            a = float(input("a: "))
+            b = float(input("b: "))
+            c = float(input("c: "))
+            d = float(input("d: "))
+            print(f"Obwód trapezu o bokach {a}, {b}, {c} i {d} = {a+b+c+d}")
+
+        elif inp == "b":
+            a = float(input("a: "))
+            b = float(input("b: "))
+            c = float(input("c: "))
+            print(f"Obwód trójkąta o bokach {a}, {b} i {c} = {a+b+c}")
+
+        print("a - obwód trójkąta równobocznego b - obwód koła")
+        inp = input(":").lower().strip()
+
+        if inp == "a":
+            a = float(input("a: "))
+            print(f"Obwód trójkąta równobocznego o boku {a} = {a*3}")
+
+        elif inp == "b":
+            r = float(input("r: "))
+            PI = 3.14
+            print(f"Obwód koła o promieniu {r} = {2*PI*r}")
+
+    elif inp == "b":
+        print("Tu będą pola figur")
+
+else:
+    print("Nie ma takiej komendy")
